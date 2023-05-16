@@ -6,5 +6,5 @@ def add_tuple(tuple_a=(), tuple_b=()):
         tuple_a += (0) * check_a
     if (check_b):
         tuple_b += (0) * check_b
-    tuple_sum = ({x + y for x, y in zip(tuple_a, tuple_b)})
-    return (tuple_sum)
+    tuple_sum = tuple(({x + y for x, y in zip(tuple_a, tuple_b)}))
+    return (tuple_sum[0:2])
