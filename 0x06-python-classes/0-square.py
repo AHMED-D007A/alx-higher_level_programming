@@ -4,6 +4,8 @@ this is the "Square" module.
 
 it provides a empty Square class.
 """
+
+
 class Square:
-    """a Square class"""
+    """A Square class"""
     pass
