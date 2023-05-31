@@ -3,6 +3,7 @@
 this is a "Square" module.
 
 it provides a Square class with initialization of size.
+Size defaults to 0. Raise errors in invalid inputs.
 """
 
 
