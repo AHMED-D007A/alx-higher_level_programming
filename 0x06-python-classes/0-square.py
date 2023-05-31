@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-module for square class.
+this is a simple "square" module.
 
 it provides a empty class named square.
 """
