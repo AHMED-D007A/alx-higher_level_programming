@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
-this is a simple "Square" module.
+this is the "Square" module.
 
-it provides a empty class named square.
+it provides a empty Square class.
 """
 class Square:
-    """a square class"""
+    """a Square class"""
     pass
