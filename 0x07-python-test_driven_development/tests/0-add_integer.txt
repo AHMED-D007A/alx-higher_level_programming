@@ -172,7 +172,7 @@ Now use it:
     >>> add_integer()
     Traceback (most recent call last):
         ...
-    TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
+    TypeError: add_integer() missing 2 required positional arguments: 'a'
 
     >>> add_integer(1)
     Traceback (most recent call last):
