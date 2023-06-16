@@ -10,7 +10,7 @@ class TestingMaxInteger(unittest.TestCase):
         self.assertIsNone(max_integer())
 
     def test_no_1(self):
-        self.assertEqual(max_integer([0], 0))
+        self.assertEqual(max_integer([0]), 0)
 
     def test_no_2(self):
         self.assertEqual(max_integer([i for i in range(10)]), 9)
