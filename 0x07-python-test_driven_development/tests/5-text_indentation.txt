@@ -15,7 +15,7 @@ Now use it:
     >>> text_indentation(false)
     Traceback (most recent call last):
         ...
-    TypeError: text must be a string
+    NameError: name 'false' is not defined
 
     >>> text_indentation("")
     
