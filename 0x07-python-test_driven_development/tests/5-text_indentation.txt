@@ -12,7 +12,17 @@ Now use it:
         ...
     TypeError: text must be a string
 
+    >>> text_indentation(false)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+
     >>> text_indentation("")
+    
+
+    >>> text_indentation("who are you?")
+    who are you?
+    <BLANKLINE>
 
     >>> text_indentation("say my name")
     say my name
