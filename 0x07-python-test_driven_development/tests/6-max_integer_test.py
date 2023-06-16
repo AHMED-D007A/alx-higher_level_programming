@@ -11,6 +11,7 @@ class TestingMaxInteger(unittest.TestCase):
 
     def test_no_1(self):
         self.assertEqual(max_integer([0]), 0)
+        self.assertEqual(max_integer([9]), 9)
 
     def test_no_2(self):
         self.assertEqual(max_integer([i for i in range(10)]), 9)
@@ -21,5 +22,6 @@ class TestingMaxInteger(unittest.TestCase):
 
     def test_None_integer(self):
         self.assertEqual(max_integer([True, False]), True)
+        self.assertEqual(max_integer(["ahmed"]), "ahmed")
         self.assertEqual(max_integer(["ahmed", "mamdouh"]), "mamdouh")
         self.assertEqual(max_integer([8.0, 9.1, 10.2]), 10.2)
