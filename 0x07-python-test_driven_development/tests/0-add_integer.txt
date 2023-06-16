@@ -72,3 +72,7 @@ Now use it:
 
     >>> add_integer(-2, 100)
     98
+    >>> add_integer()
+    Traceback (most recent call last):
+        ...
+    TypeError: missing one argument
