@@ -1,0 +1,32 @@
+This is the 'Text Indentation' module
+=========================================
+
+It uses the 'text_indentation' function, first import it:
+
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
+
+Now use it:
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+
+    >>> text_indentation("")
+
+    >>> text_indentation("say my name:")
+    say my name:
+
+    >>> text_indentation("say my name: Heisenberg?")
+    say my name:
+    <BLANKLINE>
+    Heisenberg?
+    <BLANKLINE>
+
+    >>> text_indentation("say my name: Heisenberg? You are goddamn right.")
+    say my name:
+    <BLANKLINE>
+    Heisenberg?
+    <BLANKLINE>
+    You are goddamn right.
+    <BLANKLINE>
