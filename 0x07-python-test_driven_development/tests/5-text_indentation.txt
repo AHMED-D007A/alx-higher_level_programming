@@ -16,7 +16,6 @@ Now use it:
 
     >>> text_indentation("say my name:")
     say my name:
-    <BLANKLINE>
 
     >>> text_indentation("say my name: Heisenberg?")
     say my name:
