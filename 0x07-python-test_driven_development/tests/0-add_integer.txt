@@ -75,4 +75,4 @@ Now use it:
     >>> add_integer()
     Traceback (most recent call last):
         ...
-    TypeError: missing one argument
+    TypeError: a must be an integer
