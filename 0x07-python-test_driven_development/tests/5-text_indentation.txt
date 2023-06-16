@@ -9,12 +9,18 @@ Now use it:
 
     >>> text_indentation(None)
     Traceback (most recent call last):
+        ...
     TypeError: text must be a string
 
     >>> text_indentation(false)
     Traceback (most recent call last):
         ...
     NameError: name 'false' is not defined
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+        ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
 
     >>> text_indentation("")
     
