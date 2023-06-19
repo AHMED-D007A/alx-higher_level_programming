@@ -6,7 +6,7 @@ from models.base import Base
 class Rectangle(Base):
     """This is the Rectangle class that inherits from a the Base class"""
     def __init__(self, width, height, x=0, y=0, id=None):
-        super().__init__(id)
+        Base.__init__(self, id)
         if not isinstance(width, int):
             raise TypeError("{} must be an integer".format("width"))
         if not isinstance(height, int):
