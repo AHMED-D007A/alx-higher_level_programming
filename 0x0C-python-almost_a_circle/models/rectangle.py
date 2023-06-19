@@ -4,6 +4,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """This is the Rectangle class that inherits from a the Base class"""
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -47,6 +48,7 @@ class Rectangle(Base):
         """methon to property gives the width
         Return: the width of the rectangle"""
         return self.__width
+
     @width.setter
     def width(self, width):
         """a method to set the width"""
@@ -61,6 +63,7 @@ class Rectangle(Base):
         """methon to property gives the height
         Return: the height of the rectangle"""
         return self.__height
+
     @height.setter
     def height(self, height):
         """a method to set the height"""
@@ -75,6 +78,7 @@ class Rectangle(Base):
         """methon to property gives the x
         Return: the x of the rectangle"""
         return self.__x
+
     @x.setter
     def x(self, x):
         """a method to set the x"""
@@ -89,6 +93,7 @@ class Rectangle(Base):
         """methon to property gives the y
         Return: the y of the rectangle"""
         return self.__y
+
     @y.setter
     def y(self, y):
         """a method to set the y"""
@@ -153,9 +158,9 @@ class Rectangle(Base):
         """a method to get the a dic of class attributes
         Return: the dic of its attributes"""
         return {
-            "id" : self.id,
-            "width" : self.__width,
-            "height" : self.__height,
-            "x" : self.__x,
-            "y" : self.__y
+            "id": self.id,
+            "width": self.__width,
+            "height": self.__height,
+            "x": self.__x,
+            "y": self.__y
         }

@@ -4,6 +4,7 @@
 
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
     """This is the Rectangle class that inherits from a the Base class"""
     def __init__(self, size, x=0, y=0, id=None):
@@ -24,7 +25,8 @@ class Square(Rectangle):
     def __str__(self):
         """a method to get info about the clss of instance
         Return: humain readable info"""
-        return f"[{type(self).__name__}] ({self.id}) {self.x}/{self.y} - {self.width}"
+        return f"[{type(self).__name__}] ({self.id}) {self.x}/{self.y} -"\
+               f" {self.width}"
 
     def update(self, *args, **kwargs):
         """a method to update the attributes of the calss
@@ -59,8 +61,8 @@ class Square(Rectangle):
         """a method to get the a dic of class attributes
         Return: the dic of its attributes"""
         return {
-            "id" : self.id,
-            "size" : self.width,
-            "x" : self.x,
-            "y" : self.y
+            "id": self.id,
+            "size": self.width,
+            "x": self.x,
+            "y": self.y
         }
