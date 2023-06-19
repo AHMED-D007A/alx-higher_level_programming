@@ -8,10 +8,6 @@ class Square(Rectangle):
     """This is the Rectangle class that inherits from a the Base class"""
     def __init__(self, size, x=0, y=0, id=None):
         """conatructor"""
-        if not isinstance(size, int):
-            raise TypeError("{} must be an integer".format("size"))
-        if size <= 0:
-            raise ValueError("{} must be > 0".format("size"))
         super().__init__(size, size, x, y, id)
 
     @property
@@ -22,17 +18,13 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, size):
-        if not isinstance(size, int):
-            raise TypeError("{} must be an integer".format("width"))
-        if size <= 0:
-            raise ValueError("{} must be > 0".format("width"))
         self.width = size
         self.height = size
 
     def __str__(self):
         """a method to get info about the clss of instance
         Return: humain readable info"""
-        return (f"[{type(self).__name__}] ({self.id}) {self.x}/{self.y} - {self.width}")
+        return f"[{type(self).__name__}] ({self.id}) {self.x}/{self.y} - {self.width}"
 
     def update(self, *args, **kwargs):
         """a method to update the attributes of the calss
@@ -48,7 +40,6 @@ class Square(Rectangle):
             if i == 1:
                 self.width = args[i]
                 self.height = args[i]
-                self.__size = args[i]
             if i == 2:
                 self.x = args[i]
             if i == 3:
@@ -59,7 +50,6 @@ class Square(Rectangle):
             if k == "size" or k == "width" or k == "height":
                 self.width = v
                 self.height = v
-                self.__size = v
             if k == "x":
                 self.x = v
             if k == "y":
