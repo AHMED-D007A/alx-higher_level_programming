@@ -7,6 +7,9 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """this is the initialize for instances
+        Args:
+        id (int|None): it gives an id for each insatnce"""
         if id is not None:
             self.id = id
         else:
