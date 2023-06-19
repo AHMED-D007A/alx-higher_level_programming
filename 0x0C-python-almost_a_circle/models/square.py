@@ -3,9 +3,11 @@
 
 
 from models.rectangle import Rectangle
+
 class Square(Rectangle):
     """This is the Rectangle class that inherits from a the Base class"""
     def __init__(self, size, x=0, y=0, id=None):
+        """conatructor"""
         if not isinstance(size, int):
             raise TypeError("{} must be an integer".format("size"))
         if size <= 0:
@@ -15,6 +17,8 @@ class Square(Rectangle):
 
     @property
     def size(self):
+        """methon to property gives the size
+        Return: the size of the square"""
         return self.__size
 
     @size.setter
@@ -28,9 +32,19 @@ class Square(Rectangle):
         self.height = size
 
     def __str__(self):
+        """a method to get info about the clss of instance
+        Return: humain readable info"""
         return (f"[Square] ({self.id}) {self.x}/{self.y} - {self.__size}")
 
     def update(self, *args, **kwargs):
+        """a method to update the attributes of the calss
+        It's order goes as the following:
+            1- id
+            2- width
+            3- height
+            4- x
+            5- y
+            """
         for i in range(len(args)):
             if i == 0:
                 self.id = args[i]
@@ -53,6 +67,8 @@ class Square(Rectangle):
                 self.y = v
 
     def to_dictionary(self):
+        """a method to get the a dic of class attributes
+        Return: the dic of its attributes"""
         return {
             "id" : self.id,
             "x" : self.x,
