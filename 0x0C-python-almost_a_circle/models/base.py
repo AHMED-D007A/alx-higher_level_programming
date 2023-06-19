@@ -58,12 +58,9 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """method that load converted json form a file"""
-        try:
-            with open(cls.__name__ + ".json", "r") as f:
-                json_string = f.read()
-            objs_list = cls.from_json_string(json_string)
-            return map(lambda d: cls.create(**d), objs_list)
-        except FileNotFoundError:
+        from os import path
+        ff = "{}.json".format(cls.__name__)
+        if not path.isfile(ff):
             return []
-        except Exception as exception:
-            raise exception
+        with open(ff, "r", encoding="utf-8") as f:
+            return [cls.create(**d) for d in cls.from_json_string(f.read())]
