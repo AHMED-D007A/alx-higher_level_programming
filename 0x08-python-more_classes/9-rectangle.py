@@ -78,3 +78,7 @@ class Rectangle:
 
     def change_symbol(self, sym):
         type(self).print_symbol = sym
+
+    @classmethod
+    def square(cls, size=0):
+        return (Rectangle(size, size))
