@@ -54,4 +54,4 @@ class Rectangle:
         else:
             for i in range(self.__height):
                 return ("#" * self.__width + "\n" +"#" * self.__width +\
-                        "\n" +"#" * self.__width)
+                        "\n" + "#" * self.__width + "\n" + "#" * self.__width)
