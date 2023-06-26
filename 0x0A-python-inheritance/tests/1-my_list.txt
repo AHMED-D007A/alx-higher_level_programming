@@ -1,0 +1,8 @@
+"this is the test file for my list class"
+=========================================
+
+first we need to import it:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Here is the testcases:
