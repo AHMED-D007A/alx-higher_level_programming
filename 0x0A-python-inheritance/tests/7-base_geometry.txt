@@ -1,0 +1,8 @@
+"this is the test file for BaseGeometry class"
+==============================================
+
+first we need to import it:
+
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Here is the testcases:
