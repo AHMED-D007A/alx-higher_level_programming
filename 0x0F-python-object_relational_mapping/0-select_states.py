@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 # List all states from a given db sorted in ascending order by id
 # Username, password, and database names are given as user args
-import sys
-import MySQLdb
 
 if __name__ == "__main__":
+    import sys
+    import MySQLdb
     conn = MySQLdb.connect(host="localhost",
                            port=3306,
                            user=sys.argv[1],
