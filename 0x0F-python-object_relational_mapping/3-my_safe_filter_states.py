@@ -11,10 +11,8 @@ if __name__ == '__main__':
                            passwd=sys.argv[2],
                            db=sys.argv[3])
 
-    sp = sys.argv[4].split(';')
+    sp = sys.argv[4].split("'")
     name = sp[0]
-    if name[-1] == "'":
-        name = name[0:-1]
     cur = conn.cursor()
     cur.execute("SELECT * FROM states WHERE name='{}'\
                 ORDER BY id ASC;".format(name))
