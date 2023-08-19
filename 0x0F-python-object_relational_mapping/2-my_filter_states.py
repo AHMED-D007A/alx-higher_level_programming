@@ -17,5 +17,7 @@ if __name__ == '__main__':
     for row in query_rows:
         print(row)
 
+    conn.commit()
+
     cur.close()
     conn.close()
