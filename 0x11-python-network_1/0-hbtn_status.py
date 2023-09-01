@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Fetch from given URL using `urllib` package
+"""Fetch from given URL using `urllib` package"""
 import urllib.request
 
 if __name__ == "__main__":
